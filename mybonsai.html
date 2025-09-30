@@ -1,0 +1,57 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bonsai Page</title>
+  <link rel="stylesheet" href="styles.css">   <!-- global styles -->
+  <link rel="stylesheet" href="mybonsai.css"> <!-- custom page styles -->
+</head>
+<body>
+
+  <header class="mybonsai-hero">
+    <h1>My Bonsai Gallery</h1>
+
+  </header>
+  
+  <nav class="nav-buttons">
+  <a href="a1999040-f970-4c22-8fe1-0a7c773eefec.html" class="nav-button">Home</a>
+  <a href="community.html" class="nav-button">Community</a>
+  
+</nav>
+  <main>
+  <section>
+    <h2>My Bonsai Gallery</h2>
+    <div class="bonsai-gallery">
+
+      <div class="bonsai-card">
+        <img src="Jadeshowcase.png" alt="Dwarf Jade Bonsai">
+        <div class="bonsai-description">
+          <p>This is my Dwarf Jade bonsai. I’ve trained it since 2023, and it’s thriving in Florida’s warm climate. This is a succulent, I would defintely recommned this tree for beginners</p>
+        </div>
+      </div>
+
+      <div class="bonsai-card">
+        <img src="willowleafficusshowcase.png" alt="Ficus Bonsai">
+        <div class="bonsai-description">
+          <p>My willow leaf ficus — hardy and forgiving, a very large thick trunk with a developing canopy. I am exited to see what thew future holds for this bonsai.</p>
+        </div>
+      </div>
+
+      <div class="bonsai-card">
+        <img src="BRTshowcase.png" alt="Brazilian Raintree Bonsai">
+        <div class="bonsai-description">
+          <p>This Brazilian Raintree is coming along nicely, I've had this since 2021 it keeps growing vigorously, its due a repot this spring.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+<script>
+  // Toggle description on card click
+  document.querySelectorAll('.bonsai-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
+    });
+  });
+</script>
+</body>
