@@ -233,3 +233,57 @@ header.hero.banner {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   margin-bottom: 20px;
 }
+
+h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 190px;
+}
+
+h2::before, h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 900px;
+  border: 1px solid #6b4226;
+}
+
+h2::before {
+  left: 0;
+  border-right: none;
+  border-radius: 40px 0 0 40px;
+}
+
+h2::after {
+  right: 0;
+  border-left: none;
+  border-radius: 0 40px 40px 0;
+}
+.banner {
+  background: url('bonsai-banner.gif') center/cover no-repeat;
+  height: 300px;              /* adjust height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;               /* text color over GIF */
+  position: relative;
+}
+
+/* Optional overlay so text stands out */
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3); /* dark overlay */
+}
+
+.banner h1, .banner .nav-buttons {
+  position: relative; /* keep text above overlay */
+  z-index: 1;
+}
